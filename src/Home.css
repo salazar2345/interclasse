@@ -1,0 +1,198 @@
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para a lista no header */
+#lista, #sports-list {
+  display: flex;
+  justify-content: center; /* Centraliza os itens */
+  flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se houver espaço insuficiente */
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 20px;
+  list-style-type: none;
+}
+
+#lista a, #sports-list a {
+  color: black;
+  text-decoration: none;
+  margin: 0 15px; /* Espaço entre os itens da lista */
+}
+
+/* Estilos para a imagem principal */
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para a lista de esportes abaixo da imagem */
+.sports-container {
+  margin: 20px 0;
+}
+
+/* Estilos para a tabela das equipes */
+.team-table {
+  overflow: auto;
+  margin: 20px;
+}
+
+/* Estilos gerais da tabela */
+table {
+  width: 100%; /* Ajusta a largura da tabela */
+  max-width: 100%; /* Garante que a tabela não exceda a largura do container */
+  border-collapse: collapse;
+  margin: 0 auto;
+  overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+}
+
+thead {
+  background-color: red; /* Cor de fundo do cabeçalho */
+}
+
+thead th {
+  color: white; /* Cor do texto no cabeçalho */
+  padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Cor de fundo para linhas pares no corpo da tabela */
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+td {
+  background-color: white; 
+}
+
+/* Estilos para a nova imagem */
+.image-container {
+  text-align: center; /* Centraliza a imagem dentro do container */
+  margin: 20px 0;
+}
+
+.replacement-image {
+  max-width: 100%; /* Garante que a imagem não exceda a largura do container */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilos para o rodapé */
+.footer {
+  background-color: #ff0000; /* Cor de fundo vermelha clara */
+  padding: 20px;
+  text-align: center;
+  color: #ffffff; /* Cor do texto branca */
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .links a {
+  color: #ffffff; /* Cor dos links no rodapé */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer .links a:hover {
+  color: #f0f0f0; /* Cor dos links ao passar o mouse */
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+/* Adicionar um retângulo ao redor do rodapé */
+.footer-rectangle {
+  border: 2px solid #ffffff; /* Borda branca */
+  padding: 20px;
+  background-color: #ff0000; /* Cor de fundo vermelha clara */
+  color: #ffffff; /* Cor do texto branca */
+}
+
+/* Estilos para a seção abaixo do rodapé */
+.footer-dark {
+  background-color: #c70039; /* Cor de fundo vermelha mais escura */
+  padding: 20px;
+  text-align: center;
+  color: #ffffff; /* Cor do texto branca */
+}
+
+.footer-dark p {
+  margin: 10px 0;
+}
+
+/* Estilos para os botões */
+.buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px; /* Espaço entre os botões */
+  margin: 20px 0;
+}
+
+.custom-button {
+  border-radius: 20px;
+  width: 300px;
+  height: 100px;
+  background-color: red; /* Cor de fundo vermelha */
+  color: white; /* Cor do texto branca */
+  border: 1px solid black; /* Borda fina preta */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 50px; /* Tamanho da fonte */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transição suave da cor do fundo */
+}
+
+.custom-button:hover {
+  background-color: darkred; /* Cor de fundo ao passar o mouse */
+}
+
+#torneio {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  text-align: center;
+  font-size: 80px;
+}
+
+.icon {
+  margin-left: 100px;
+  margin-top: 2px;
+}
+
+.icon2 {
+  margin-left: 28px;
+}
+
+
+@media (max-width: 480px) {
+  .custom-button {
+    width: 100%; /* Botões ocupam toda a largura disponível */
+    height: 40px; /* Ajusta a altura dos botões */
+    font-size: 16px; /* Ajusta o tamanho da fonte dos botões */
+  }
+
+  #torneio {
+    font-size: 24px; /* Ajusta o tamanho da fonte para telas menores */
+  }
+
+  table {
+    overflow-x: auto;
+    font-size: 10px; /* Reduz o tamanho da fonte da tabela para telas muito pequenas */
+  }
+}

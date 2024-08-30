@@ -1,0 +1,98 @@
+/* Estilos para a barra vermelha */
+.top-bar {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+
+}
+
+/* Estilos para a lista de esportes */
+.sports-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    /* Espaço abaixo da barra superior */
+    padding: 20px;
+    background-color: #f8f8f8;
+    padding-left: 20px;
+    /* Mover a lista de esportes para a direita */
+}
+
+/* Estilos para os links */
+.sports-list a {
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: -10px;
+    /* Mover os nomes para cima */
+}
+
+.sports-list a:hover {
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilos para a barra do meio */
+.tabela {
+    background-color: rgb(255, 224, 224);
+    height: 400px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    flex-direction: column;
+}
+
+.tabela2 {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 224, 224);
+    height: 400px;
+    width: 600px;
+    margin: 20px 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tabelas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.icon {
+    margin-left: 80px;
+    margin-right: -40px;
+    margin-top: -8px;
+}
+
+.icon2 {
+    margin-top: -8px;
+    margin-right: 50px;
+}
+
+.sesi {
+    width: 130px;
+    margin-top: -13px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 450px;
+    background-color: white;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
